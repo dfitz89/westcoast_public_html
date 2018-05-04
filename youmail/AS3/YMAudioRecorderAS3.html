@@ -1,0 +1,90 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>YMAudioRecorderAS3</title>
+<link rel="stylesheet" href="css/ym.css" type="text/css" media="screen"/>
+<script language="javascript" src="js/ym.js"/>
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="AC_RunActiveContent.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+<!--url's used in the movie-->
+<!--text used in the movie-->
+<!--
+<p align="center"><font face="Arial Black" size="12" color="#ffffff" letterSpacing="0.000000" kerning="1">00:00</font></p>
+<p align="left"></p>
+-->
+<!-- saved from url=(0013)about:internet -->
+<script language="javascript">
+	if (AC_FL_RunContent == 0) {
+		alert("This page requires AC_RunActiveContent.js.");
+	} else {
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+			'width', '215',
+			'height', '138',
+			'src', 'YMAudioRecorderAS3',
+			'quality', 'high',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'align', 'middle',
+			'play', 'true',
+			'loop', 'true',
+			'scale', 'showall',
+			'wmode', 'window',
+			'devicefont', 'false',
+			'id', 'YMAudioRecorderAS3',
+			'bgcolor', '#ffffff',
+			'name', 'YMAudioRecorderAS3',
+			'menu', 'true',
+			'allowFullScreen', 'false',
+			'allowScriptAccess','sameDomain',
+			'movie', 'YMAudioRecorderAS3',
+			'salign', ''
+			); //end AC code
+	}
+</script>
+<noscript>
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="215" height="138" id="YMAudioRecorderAS3" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="YMAudioRecorderAS3.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="YMAudioRecorderAS3.swf" quality="high" bgcolor="#ffffff" width="215" height="138" name="YMAudioRecorderAS3" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+	</object>
+</noscript>
+<br/>
+<br/>
+<div id="saveCancel">
+	<button id="saveButton" type="submit" value="Save" onClick="doSave()" disabled="true">Save</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	<button id="cancelButton" type="button" value="Cancel" onClick="doCancel()" disabled="true">Cancel</button>
+</div>
+<br/>
+<br/>
+    <br/>
+    <br/>
+	<button id="configPanelButton" type="button" value="configPanelButton" onClick="showHideConfigPanel(document.getElementById('configPanel'), 'show')"><label id="configPanelBtnLabel">Hide Config Panel</label></button>
+    <br/>
+    <br/>
+<div id="configPanel">
+ 	<fieldset style="width:55%">
+    <br/>
+	<form name="recorderForm" action="#">
+    	<label id="backgroundColorLabel">Background Color:</label>
+    	<input type="text" size="8" maxlength="8" name="backgroundColor" id="backgroundColor"/> &nbsp;&nbsp;&nbsp;&nbsp;
+		<button type="button" value="Change Background Color" onClick="doChangeBackgroundColor(document.getElementById('backgroundColor').value)">Change</button>&nbsp;&nbsp;(input color in the form 0xff0000)<br/><br/>
+    	<label id="displayBgColorLabel">Display BgColor:</label>
+    	<input type="text" size="8" maxlength="8" name="volumeDisplayBgColor" id="volumeDisplayBgColor"/> &nbsp;&nbsp;&nbsp;&nbsp;
+		<button type="button" value="Change Display Color" onClick="doChangeVolumeDisplayBackgroundColor(document.getElementById('volumeDisplayBgColor').value)">Change</button>&nbsp;&nbsp;(input color in the form 0xff0000)
+        <br/>
+        <br/>
+    	<label id="showLogo">Show Logo:</label>
+    	<input type="radio" name="showLogo" id="showLogo" value="True" checked>True</>
+    	<input type="radio" name="showLogo" id="showLogo" value="False">False</>&nbsp;&nbsp;
+        <button type="button" onClick="doShowLogo()">Show Logo</button>
+    </form>
+    </br>
+    <div id="resetRecorder">
+    	<button id="resetRecorderBtn" onClick="resetRecorder()" value="Reset Recorder">Reset Recorder</button>
+    </div>
+    </fieldset>
+</div>
+</body>
+</html>

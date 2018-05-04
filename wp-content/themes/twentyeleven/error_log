@@ -1,0 +1,4 @@
+[03-Feb-2018 22:03:52 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/westcoas/public_html/wp-content/themes/twentyeleven/404.php on line 10
+[10-Feb-2018 23:25:55 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/westcoas/public_html/wp-content/themes/twentyeleven/single.php on line 10
+[10-Feb-2018 23:25:57 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/westcoas/public_html/wp-content/themes/twentyeleven/single.php on line 10
+[12-Apr-2018 11:44:57 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/westcoas/public_html/wp-content/themes/twentyeleven/404.php on line 10

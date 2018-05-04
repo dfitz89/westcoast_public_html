@@ -1,0 +1,2 @@
+[26-Nov-2017 07:25:21 UTC] PHP Fatal error:  Call to undefined function __() in /home/westcoas/public_html/wp-admin/user/menu.php on line 10
+[26-Nov-2017 07:27:21 UTC] PHP Fatal error:  Call to undefined function __() in /home/westcoas/public_html/wp-admin/user/menu.php on line 10

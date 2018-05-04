@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+.smallButton {
+   border-width: 3px;
+   border-color: #CCCCDD #000055 #000055 #CCCCDD ;
+   border-style: solid;
+   font-family: Arial, Helvetica, sans-serif; 
+   font-weight: 900;
+   color: #fff; 
+   text-decoration: none; 
+   cursor: pointer;
+   background: url("../images/buttonbackgS.jpg");
+   width:80px;
+}
+
+

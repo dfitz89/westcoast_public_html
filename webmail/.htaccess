@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^webmail\.westcoastsoftware\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.webmail\.westcoastsoftware\.com$
+RewriteRule ^/?$ "http\:\/\/westcoastsoftware\.com\:2095\/" [R=301,L]
+

@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^cpanel\.westcoastsoftware\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cpanel\.westcoastsoftware\.com$
+RewriteRule ^/?$ "http\:\/\/westcoastsoftware\.com\:2082\/" [R=301,L]
+

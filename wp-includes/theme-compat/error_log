@@ -1,0 +1,1 @@
+[13-Feb-2018 21:48:38 UTC] PHP Fatal error:  Call to undefined function post_class() in /home/westcoas/public_html/wp-includes/theme-compat/embed-content.php on line 13

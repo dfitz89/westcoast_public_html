@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+     <serverName>rtmp://67.222.3.74/oflaDemo</serverName>
+<!--     <serverName>rtmp://localhost/oflaDemo</serverName> -->
+     <fileRecordingPrefix>recording</fileRecordingPrefix>
+     <bitRate>11</bitRate>
+	 <recorderBackgroundColor></recorderBackgroundColor>
+	 <volumeDisplayBackgroundColor>0x000000</volumeDisplayBackgroundColor>
+	 <showLogo>false</showLogo>
+</config>

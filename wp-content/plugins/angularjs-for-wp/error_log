@@ -1,0 +1,3 @@
+[13-Aug-2016 12:23:56 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/westcoas/public_html/wp-content/plugins/angularjs-for-wp/includes/metaBox.php on line 18
+[24-Mar-2017 21:52:27 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/westcoas/public_html/wp-content/plugins/angularjs-for-wp/includes/metaBox.php on line 18
+[29-May-2017 15:27:50 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/westcoas/public_html/wp-content/plugins/angularjs-for-wp/includes/metaBox.php on line 18
