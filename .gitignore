@@ -1,0 +1,26 @@
+# Don't check auto-generated stuff into git
+coverage
+build
+node_modules
+stats.json
+
+# Cruft
+.DS_Store
+npm-debug.log
+.idea
+
+# non react-boilerplate additions
+.gitignore
+git/
+MyApp/
+MySpace/
+graphql-server/
+node_modules/
+react-boilerplate/
+react-native/
+react/
+readme.bak
+topten_react/
+wcs_app/
+wcs_wp_dirs.tar.gz
+xmlrpc.php.bak
