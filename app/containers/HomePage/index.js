@@ -50,17 +50,17 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
     return (
       <article>
         <Helmet>
-          <title>Home Page</title>
+          <title>West Coast Software Home</title>
           <meta name="description" content="A React.js Boilerplate application homepage" />
         </Helmet>
         <div>
           <CenteredSection>
-            <H2>
-              <FormattedMessage {...messages.startProjectHeader} />
-            </H2>
-            <p>
-              <FormattedMessage {...messages.startProjectMessage} />
-            </p>
+            {/* <H2>*/}
+            {/* <FormattedMessage {...messages.startProjectHeader} />*/}
+            {/* </H2>*/}
+            {/* <p>*/}
+            {/* <FormattedMessage {...messages.startProjectMessage} />*/}
+            {/* </p>*/}
           </CenteredSection>
           <Section>
             <H2>
