@@ -25,7 +25,7 @@ import LanguageProvider from 'containers/LanguageProvider';
 
 // Load the favicon, the manifest.json file and the .htaccess file
 /* eslint-disable import/no-webpack-loader-syntax */
-import '!file-loader?name=[name].[ext]!./images/favicon.ico';
+import '!file-loader?name=[name].[ext]!./images/wcs.ico';
 import '!file-loader?name=[name].[ext]!./images/icon-72x72.png';
 import '!file-loader?name=[name].[ext]!./images/icon-96x96.png';
 import '!file-loader?name=[name].[ext]!./images/icon-120x120.png';
