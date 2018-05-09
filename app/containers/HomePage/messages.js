@@ -18,6 +18,10 @@ export default defineMessages({
     id: 'boilerplate.containers.HomePage.tryme.header',
     defaultMessage: 'Try me!',
   },
+  whatsYourOpinionHeader: {
+    id: 'boilerplate.containers.HomePage.whatopinion.header',
+    defaultMessage: 'What do you think?',
+  },
   trymeMessage: {
     id: 'boilerplate.containers.HomePage.tryme.message',
     defaultMessage: 'Show Github repositories by',
