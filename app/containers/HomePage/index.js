@@ -11,7 +11,6 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
-
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
 import { makeSelectRepos, makeSelectLoading, makeSelectError } from 'containers/App/selectors';
@@ -50,7 +49,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
     return (
       <article>
         <Helmet>
-          <title>West Coast Software Home</title>
+          <title>West Coast Software</title>
           <meta name="description" content="A React.js Boilerplate application homepage" />
         </Helmet>
         <div>

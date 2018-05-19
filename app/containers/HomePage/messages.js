@@ -20,7 +20,7 @@ export default defineMessages({
   },
   whatsYourOpinionHeader: {
     id: 'boilerplate.containers.HomePage.whatopinion.header',
-    defaultMessage: 'What do you think?',
+    defaultMessage: 'Coming Soon...',
   },
   trymeMessage: {
     id: 'boilerplate.containers.HomePage.tryme.message',
