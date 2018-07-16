@@ -28,7 +28,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
       <div>
         <StyleRoot>
           <div style={styles.zoomIn}>
-            <A href="https://www.westcoastsoftware.com/">
+            <A href="http://www.westcoastsoftware.com/">
               <Img src={Banner} alt="react-boilerplate - Logo" />
             </A>
           </div>
