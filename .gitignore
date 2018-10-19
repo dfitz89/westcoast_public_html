@@ -12,6 +12,8 @@ npm-debug.log
 # non react-boilerplate additions
 .gitignore
 git/
+ocweedmachine/
+budcompass/
 MyApp/
 MySpace/
 graphql-server/
