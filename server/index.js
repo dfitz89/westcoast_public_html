@@ -1,6 +1,7 @@
 /* eslint consistent-return:0 */
 
 const express = require('express');
+const mysql = require('mysql');
 const logger = require('./logger');
 
 const argv = require('./argv');
@@ -10,6 +11,16 @@ const isDev = process.env.NODE_ENV !== 'production';
 const ngrok = (isDev && process.env.ENABLE_TUNNEL) || argv.tunnel ? require('ngrok') : false;
 const resolve = require('path').resolve;
 const app = express();
+
+const connection = mysql.createConnection({
+  host: '127.0.0.1',
+  user: 'root',
+  password: 'luckys',
+  database: 'my_db',
+  port: '32777',
+});
+
+connection.query('SELECT "title" AS first_field, "id" AS second_field from posts', (err, results) => { console.log(`results = ${results}`); connection.end(); });
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
@@ -27,6 +38,8 @@ const prettyHost = customHost || 'localhost';
 
 // Start your app.
 app.listen(port, host, (err) => {
+  console.log(`host = ${host} and port = ${port}`);
+
   if (err) {
     return logger.error(err.message);
   }

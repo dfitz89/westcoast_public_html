@@ -13,7 +13,13 @@ export default defineMessages({
   authorMessage: {
     id: 'boilerplate.components.Footer.author.message',
     defaultMessage: `
-      Made with React-Boilerplate by {author}.
+      Made with React-Boilerplate by {author}
+    `,
+  },
+  hostedByMessage: {
+    id: 'boilerplate.components.Footer.hostedBy.message',
+    defaultMessage: `
+      Hosted on {hostedBy}.
     `,
   },
 });

@@ -10,12 +10,22 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
+import Amplify from 'aws-amplify';
+import { withAuthenticator } from 'aws-amplify-react';
 
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-// import Header from 'components/Header';
-// import Footer from 'components/Footer';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+
+Amplify.configure({
+  Auth: {
+    region: 'us-east-1',
+    userPoolId: 'us-east-1_vEgXyvfVo',
+    userPoolWebClientId: '4g7e9kv03nbccv52r5missmko2',
+  },
+});
 
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
@@ -26,7 +36,7 @@ const AppWrapper = styled.div`
   flex-direction: column;
 `;
 
-export default function App() {
+const App = function App() {
   return (
     <AppWrapper>
       <Helmet
@@ -35,13 +45,15 @@ export default function App() {
       >
         <meta name="description" content="A React.js Boilerplate application" />
       </Helmet>
-      {/* <Header /> */}
+      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/features" component={FeaturePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </AppWrapper>
   );
-}
+};
+
+export default withAuthenticator(App, true);
