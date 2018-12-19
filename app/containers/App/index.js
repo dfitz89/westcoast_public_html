@@ -22,8 +22,8 @@ import Footer from 'components/Footer';
 Amplify.configure({
   Auth: {
     region: 'us-east-1',
-    userPoolId: 'us-east-1_lykdvKxeO', // 'us-east-1_vEgXyvfVo',
-    userPoolWebClientId: '5g6cna5jair9t5mb35tk6hk5jj', // '4g7e9kv03nbccv52r5missmko2',
+    userPoolId: 'us-east-1_vEgXyvfVo',
+    userPoolWebClientId: '4g7e9kv03nbccv52r5missmko2',
   },
 });
 
